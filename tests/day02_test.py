@@ -28,7 +28,7 @@ def test_day_02_sample(sample_list):
 
 
 def test_day_02_real(real_list):
-    assert day02.get_score(real_list) == 15
+    assert day02.get_score(real_list) == 12458
 
 
 def test_day_02_part_2_sample(sample_list):

@@ -30,11 +30,10 @@ def get_score(plays):
         score += my_symbols[me]
         if their_symbols[them] == my_symbols[me]:
             score += 3
-        elif me == 'X' and them == 'C':
-            score += 6
-        elif me == 'Y' and them == 'A':
-            score += 6
-        elif me == 'Z' and them == 'B':
+        defeated_number: int = my_symbols[me] - 1
+        if defeated_number == 0:
+            defeated_number = 3
+        if their_symbols[them] == defeated_number:
             score += 6
     return score
 
