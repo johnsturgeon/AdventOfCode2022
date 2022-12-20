@@ -60,7 +60,7 @@ def test_get_queue_data_sample(sample_list):
     print(message)
 
 
-def test_get_queue_data_sample(real_list):
+def test_get_queue_data_real(real_list):
     stack_list = day05.get_stack_list(real_list)
     instruction_list = day05.get_instruction_list(real_list, len(stack_list))
     starting_stacks = day05.get_starting_stacks(stack_list)
