@@ -26,14 +26,17 @@ def real_list() -> List:
     return get_list(real_file)
 
 
-def test_packet_position_sample(sample_list):
-    assert day06.get_packet_position(sample_list) == 7
+def test_day07_sample(sample_list):
+    assert day07.get_sum_of_small_dirs(sample_list) == 95437
 
 
-def test_packet_position_real(real_list):
-    assert day06.get_packet_position(real_list) == 1848
+def test_day07_real(real_list):
+    assert day07.get_sum_of_small_dirs(real_list) == 1517599
 
 
-def test_packet_position_real_p2(real_list):
-    assert day06.get_packet_position(real_list, key_len=14) == 2308
+def test_day07_delete_dir_sample(sample_list):
+    assert day07.delete_directory(sample_list) == 24933642
 
+
+def test_day07_delete_dir_real(real_list):
+    assert day07.delete_directory(real_list) == 2481982
